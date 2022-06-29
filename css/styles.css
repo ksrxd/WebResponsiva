@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;700&display=swap");
 /* Variables para los colores */
 :root {
   --bttn-border-radius: 50px;
@@ -13,10 +13,12 @@
   list-style: none;
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
+
 }
 body {
   display: flex;
   flex-direction: column;
+
 }
 
 /* header: logo, barra de navegacion y boton */
@@ -34,7 +36,7 @@ header {
 
 #nav-bar ul {
   display: flex;
-  padding-top: 3%;
+  padding-top: 4%;
 }
 #nav-bar ul li {
   height: 100%;
@@ -44,7 +46,9 @@ header {
   text-decoration: none;
   color: var(--color-h1-sections);
   font-size: 13px;
+
 }
+
 #btn-header {
   display: flex;
   position: absolute;
@@ -275,7 +279,7 @@ section {
   justify-content: space-between;
 }
 #pre-footer * p {
-  width: 438px;
+  width: auto;
   height: 96px;
   font-style: normal;
   font-weight: 700;
@@ -325,18 +329,17 @@ footer * {
   justify-content: space-evenly;
 }
 
-
 .listas-ft-1 a {
   text-decoration: none;
   color: #ffffff;
   line-height: 23px;
-  font-weight: 400;
+  font-weight: 200;
 }
-    .listas-ft-2 a {
+.listas-ft-2 a {
   text-decoration: none;
   color: #ffffff;
   line-height: 23px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 #container-form-rights {
@@ -386,14 +389,13 @@ footer * {
 @media (max-width: 900px) {
   header #nav-bar {
     visibility: hidden;
-    box-sizing: content-box
+    box-sizing: content-box;
   }
   header #btn-header {
     visibility: hidden;
   }
   #btn-hamburguer-mobile {
-    margin-right: 50%;
-    margin-top:-30%;
+    margin-bottom: 25%;
     border: none;
   }
   /*first section*/
@@ -434,7 +436,7 @@ footer * {
     flex-direction: column;
   }
 
-  #whats-different .left-box p{
+  #whats-different .left-box p {
     margin-left: -15%;
   }
   #whats-different .right-box {
@@ -449,21 +451,19 @@ footer * {
   #whats-different .right-box div .btn-title {
     margin-left: -10%;
   }
-  #whats-different .left-box h1{
-
+  #whats-different .left-box h1 {
     display: flex;
-    margin:50%;
+    margin: 50%;
     text-align: center;
     width: fit-content;
   }
 
   /*3rd section*/
-  .cards{
-display: flex;
-justify-content: center;  
-flex-direction: column;
-
-}
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   /* pre-footer*/
   #pre-footer {
@@ -471,6 +471,8 @@ flex-direction: column;
     flex-direction: column;
     margin: auto;
     height: fit-content;
+    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-size: cover;
   }
   #pre-footer div p {
     text-align: center;
@@ -488,7 +490,7 @@ flex-direction: column;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    height:400px;
+    height: 425px;
   }
   #container-form-rights .form {
     order: 0;
@@ -496,6 +498,9 @@ flex-direction: column;
   #container-form-rights .rights {
     position: absolute;
     top: 350px;
+    size-adjust: auto;
+    display: flex;
+    justify-content: center;
   }
   .listas {
     display: flex;
@@ -503,16 +508,14 @@ flex-direction: column;
     align-items: center;
     margin-left: -15%;
     justify-content: space-between;
-  
   }
   #logo-iconos {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   #logo-iconos .redes-icono a img {
     size: 200%;
-  
   }
   #logo-iconos .redes-iconos {
     display: flex;
@@ -521,9 +524,15 @@ flex-direction: column;
   }
   #logo-iconos .logo-footer {
     order: 1;
+    display: flex;
+    justify-content: center;
   }
 
+  body {
+    width: 100%;
 
+    margin: 0%;
+  }
 }
 
 /*query desktop*/
@@ -531,7 +540,7 @@ flex-direction: column;
   #btn-hamburguer-mobile {
     visibility: hidden;
   }
-  footer #rights-mobile{
+  footer #rights-mobile {
     visibility: hidden;
   }
 
@@ -541,10 +550,16 @@ flex-direction: column;
     width: inherit;
   }
 
-  footer .listas{
+  footer .listas {
     display: flex;
     flex-direction: row;
   }
 
-  
+  body {
+    margin: 0%;
+  }
+  #pre-footer{
+    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-size: cover;
+  }
 }
