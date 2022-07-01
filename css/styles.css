@@ -13,7 +13,6 @@
   list-style: none;
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
-
 }
 body {
   display: flex;
@@ -59,7 +58,14 @@ header {
   background-color: var(--color-buttons-footer);
   border-radius: var(--bttn-border-radius);
   justify-content: center;
+  
 }
+button:hover{
+  color: var(--color-h1-sections);
+
+}
+
+
 .btn-get-started {
   background-color: var(--color-buttons-footer);
   font-weight: 500;
@@ -533,6 +539,7 @@ footer * {
 
     margin: 0%;
   }
+
 }
 
 /*query desktop*/
@@ -559,7 +566,7 @@ footer * {
     margin: 0%;
   }
   #pre-footer{
-    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-image: url('../img/bg-simplify-section-desktop.svg');
     background-size: cover;
   }
 }
